@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
@@ -28,5 +24,12 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+html body.bg-full-screen-image {
+  background: url(../public/img/bg3.png) no-repeat center center fixed;
+  background-size: cover;
+  /*background-color: #113577;*/
+  /*background-blend-mode: color;*/
 }
 </style>
